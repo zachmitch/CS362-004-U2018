@@ -1,0 +1,34 @@
+TEST RESULTS FOR ASSIGNMENT3:
+Running 'unittest1.c': 
+Testing function 'scoreFor()'
+File 'dominion.c'
+Lines executed:0.00% of 560
+Creating 'dominion.c.gcov'
+
+Running 'unittest2.c': 
+Testing getCost() function:
+getCost():  PASS curse cost == 0
+getCost():  PASS estate cost == 2
+getCost():  PASS duchy cost == 5
+getCost():  PASS province cost == 8
+getCost():  PASS copper cost == 0
+getCost():  PASS silver cost == 3
+getCost():  PASS gold cost == 6
+getCost():  PASS adventurer cost == 6
+getCost():  PASS smithy cost == 4
+TEST SUCCESSFULLY COMPLETEDFile 'dominion.c'
+Lines executed:1.96% of 560
+Creating 'dominion.c.gcov'
+
+Running 'unittest3.c': 
+buyCard()
+File 'dominion.c'
+Lines executed:0.00% of 560
+Creating 'dominion.c.gcov'
+
+Running 'unittest4.c': 
+shuffle()
+File 'dominion.c'
+Lines executed:0.00% of 560
+Creating 'dominion.c.gcov'
+
