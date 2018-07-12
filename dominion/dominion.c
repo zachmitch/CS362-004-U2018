@@ -18,6 +18,9 @@ struct gameState* newGame() {
   return g;
 }
 
+
+//Takes enums of card and places in kingdom card pos
+//returns array
 int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
 		  int k8, int k9, int k10) {
   int* k = malloc(10 * sizeof(int));
@@ -270,7 +273,11 @@ int playCard(int handPos, int choice1, int choice2, int choice3, struct gameStat
 }
 
 int buyCard(int supplyPos, struct gameState *state) {
-  int who;
+ 
+
+  //ASSUMPTION BASED ON gainCard() -> "Note: supplyPos is enum of choosen card"
+ 
+int who;
   if (DEBUG){
     printf("Entering buyCard...\n");
   }
@@ -450,6 +457,7 @@ int scoreFor (int player, struct gameState *state) {
       if (state->deck[player][i] == great_hall) { score = score + 1; };
       if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
     }
+
 
   return score;
 }

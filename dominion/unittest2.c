@@ -11,95 +11,41 @@ void testScoreFor() {
 
 	printf("Testing getCost() function:\n");
 
-	int testSuccess = 1;
+	int i; //Iterator
+	int testSuccess = 1; // Bool whether test passed or not
 	
-	//Card names and their corresponding ENUM
-	int curse = 0;
-	int estate = 1;
-	int duchy = 2;
-	int province = 3;
-	int copper = 4;
-	int silver = 5;
-	int gold = 6;
-	int adventurer = 7;
-	int smithy = 13;
-
+	//Card names and their position is the corresponding ENUM
+	char * card[] = {"curse", "estate", "duchy", "province", "copper", "silver", "gold",
+	"adventurer", "council_room", "feast", "gardens", "mine", "remodel", "smithy",
+	"village", "baron", "great_hall", "minion", "steward", "tribute", "ambassador",
+	"cutpurse", "embargo", "outpost", "salvager", "sea_hag", "treasure_map"};
 
 	//Got the cost from:
 	//  http://wiki.dominionstrategy.com/index.php/List_of_cards
+	int card_cost[] = {0, 2, 5, 8, 0, 3, 6, 6, 5, 4, 4, 5, 4, 4, 3, 4, 3, 5,
+	3, 5, 3, 4, 2, 5, 4, 4, 4};
 
-	if ( getCost(curse) == 0)
-		printf("getCost():  PASS curse cost == 0\n");
-	else {
-		printf("getCost():  FAIL curse cost != 0\n");
-		testSuccess = 0;
+	
+	//Iterate over cards and confirm correct cost
+	for (i = 0; i < 27; i++) {
+
+		if ( getCost(i) == card_cost[i] ) {
+
+			printf("getCost(): PASS when testing %s == %d.\n", card[i], card_cost[i]);
+
+		} else {
+
+			printf("getCost(): FAIL when testing %s == %d.\n", card[i], card_cost[i]);
+			testSuccess = 0;
+		}
+	
 	}
 
-
-	if ( getCost(estate) == 2)
-		printf("getCost():  PASS estate cost == 2\n");
-	else {
-		printf("getCost():  FAIL estate cost != 2\n");
-		testSuccess = 0;
+	if (testSuccess) {
+		printf("TEST SUCCESSFUL\n");
+	} else {
+		printf("TEST FAILED\n");
 	}
-
-
-	if ( getCost(duchy) == 5)
-		printf("getCost():  PASS duchy cost == 5\n");
-	else {
-		printf("getCost():  FAIL duchy cost != 5\n");
-		testSuccess = 0;
-	}
-
-	if ( getCost(province) == 8)
-		printf("getCost():  PASS province cost == 8\n");
-	else {
-		printf("getCost():  FAIL province cost != 8\n");
-		testSuccess = 0;
-	}
-
-	if ( getCost(copper) == 0)
-		printf("getCost():  PASS copper cost == 0\n");
-	else {
-		printf("getCost():  FAIL copper cost != 0\n");
-		testSuccess = 0;
-	}
-
-	if ( getCost(silver) == 3)
-		printf("getCost():  PASS silver cost == 3\n");
-	else {
-		printf("getCost():  FAIL silver cost != 3\n");
-		testSuccess = 0;
-	}
-
-	if ( getCost(gold) == 6)
-		printf("getCost():  PASS gold cost == 6\n");
-	else {
-		printf("getCost():  FAIL gold cost != 6\n");
-		testSuccess = 0;
-	}
-
-	if ( getCost(adventurer) == 6)
-		printf("getCost():  PASS adventurer cost == 6\n");
-	else {
-		printf("getCost():  FAIL adventurer cost != 6\n");
-		testSuccess = 0;
-	}
-
-
-	if ( getCost(smithy) == 4)
-		printf("getCost():  PASS smithy cost == 4\n");
-	else {
-		printf("getCost():  FAIL smithy cost != 4\n");
-		testSuccess = 0;
-	}
-
-
-	if (testSuccess)
-		printf("TEST SUCCESSFULLY COMPLETED");
-	else 
-		printf("TEST FAILED");
-
 
 }
 

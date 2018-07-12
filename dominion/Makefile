@@ -37,7 +37,7 @@ all: playdom player
 
 unittestresults: dominion.c rngs.c unittest1.c unittest2.c 
 	echo "TEST RESULTS FOR ASSIGNMENT3:" > unittestresults.out
-
+	echo >> unittestresults.out
 	echo "Running 'unittest1.c': " >> unittestresults.out
 	gcc -o unittest1 unittest1.c dominion.c rngs.c $(CFLAGS)
 	unittest1 >> unittestresults.out

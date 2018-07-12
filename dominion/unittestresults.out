@@ -1,34 +1,70 @@
 TEST RESULTS FOR ASSIGNMENT3:
+
 Running 'unittest1.c': 
-Testing function 'scoreFor()'
+Testing scoreFor() function:
+scoreFor(): FAIL when testing 1 of each scoring card in deck, hand, discard == 33
+scoreFor(): PASS when testing 3 x (curse), 2 x (duchy, estate), great hall, gardens  == 6
+scoreFor(): PASS when testing 10 curses  == -10
+scoreFor(): PASS when testing hand  == 13
+TEST FAILED
 File 'dominion.c'
-Lines executed:0.00% of 560
+Lines executed:6.43% of 560
 Creating 'dominion.c.gcov'
 
 Running 'unittest2.c': 
 Testing getCost() function:
-getCost():  PASS curse cost == 0
-getCost():  PASS estate cost == 2
-getCost():  PASS duchy cost == 5
-getCost():  PASS province cost == 8
-getCost():  PASS copper cost == 0
-getCost():  PASS silver cost == 3
-getCost():  PASS gold cost == 6
-getCost():  PASS adventurer cost == 6
-getCost():  PASS smithy cost == 4
-TEST SUCCESSFULLY COMPLETEDFile 'dominion.c'
-Lines executed:1.96% of 560
+getCost(): PASS when testing curse == 0.
+getCost(): PASS when testing estate == 2.
+getCost(): PASS when testing duchy == 5.
+getCost(): PASS when testing province == 8.
+getCost(): PASS when testing copper == 0.
+getCost(): PASS when testing silver == 3.
+getCost(): PASS when testing gold == 6.
+getCost(): PASS when testing adventurer == 6.
+getCost(): PASS when testing council_room == 5.
+getCost(): PASS when testing feast == 4.
+getCost(): PASS when testing gardens == 4.
+getCost(): PASS when testing mine == 5.
+getCost(): PASS when testing remodel == 4.
+getCost(): PASS when testing smithy == 4.
+getCost(): PASS when testing village == 3.
+getCost(): PASS when testing baron == 4.
+getCost(): PASS when testing great_hall == 3.
+getCost(): PASS when testing minion == 5.
+getCost(): PASS when testing steward == 3.
+getCost(): PASS when testing tribute == 5.
+getCost(): PASS when testing ambassador == 3.
+getCost(): PASS when testing cutpurse == 4.
+getCost(): PASS when testing embargo == 2.
+getCost(): PASS when testing outpost == 5.
+getCost(): PASS when testing salvager == 4.
+getCost(): PASS when testing sea_hag == 4.
+getCost(): PASS when testing treasure_map == 4.
+TEST SUCCESSFUL
+File 'dominion.c'
+Lines executed:5.18% of 560
 Creating 'dominion.c.gcov'
 
 Running 'unittest3.c': 
-buyCard()
+Testing buyCard() function:
+buyCard():  PASS no buys available
+buyCard():  PASS supplyCount == 0, cannot buy
+buyCard():  PASS not enough coins to buy, cannot buy
+buyCard():  PASS bought smithy and successfully added to discard
+buyCard():  PASS coins deducted correctly from available amt
+buyCard():  PASS user buys deducted correctly
+TEST SUCCESSFUL
 File 'dominion.c'
-Lines executed:0.00% of 560
+Lines executed:5.00% of 560
 Creating 'dominion.c.gcov'
 
 Running 'unittest4.c': 
-shuffle()
+Testing function shuffle():
+shuffle():  PASS cannot shuffle an empty deck
+shuffle():  PASS cards were shuffled into a different order
+shuffle():  PASS deckCount was not affected by shuffle
+TEST SUCCESSFUL
 File 'dominion.c'
-Lines executed:0.00% of 560
+Lines executed:4.11% of 560
 Creating 'dominion.c.gcov'
 
