@@ -5,9 +5,9 @@
 #include "rngs.h"
 #include <math.h>
 
-//Unit test for scoreFor() in dominion.c
+//Unit test for getCost() in dominion.c
 
-void testScoreFor() {
+void testGetCost() {
 
 	printf("Testing getCost() function:\n");
 
@@ -53,7 +53,7 @@ void testScoreFor() {
 
 int main() {
 
-	testScoreFor();
+	testGetCost();
 	return 0;
 
 }

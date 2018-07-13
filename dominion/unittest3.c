@@ -6,7 +6,7 @@
 #include <math.h>
 
 
-//Unit test for scoreFor() in dominion.c
+//Unit test for buyCard() in dominion.c
 
 void testbuyCard() {
 
