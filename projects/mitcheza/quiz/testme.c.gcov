@@ -1,0 +1,80 @@
+        -:    0:Source:testme.c
+        -:    0:Graph:testme.gcno
+        -:    0:Data:testme.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include<stdio.h>
+        -:    2:#include<string.h>
+        -:    3:#include<stdlib.h>
+        -:    4:#include<time.h>
+        -:    5:
+    16578:    6:char inputChar()
+        -:    7:{
+        -:    8:   	//Goal is to get printable ascii characters
+        -:    9:		//from ascii decimal char 32-126 ('space' through '~')
+    16578:   10:	char randChar = (rand() % 94) + 32; 
+        -:   11: 
+    16578:   12:    	return randChar;
+        -:   13:}
+        -:   14:
+    16578:   15:char *inputString()
+        -:   16:{
+        -:   17:
+        -:   18:	//Since we are only testing for 'reset\0', we have space for 6 chars
+        -:   19:	static char outString[6];
+    16578:   20:	memset(outString, '\0', 6);
+        -:   21:
+        -:   22:	//Necessary characters plus two random chars
+    16578:   23:	char legalChars[6] = { 'z', 'r', 'e', 's', 't','m' };
+        -:   24:
+        -:   25:	int i;
+        -:   26:	char randChar;
+        -:   27:
+    99468:   28:	for (i = 0; i < 5; i++) {
+    82890:   29:		randChar = legalChars[rand() % 6];
+    82890:   30:		outString[i] = randChar;
+        -:   31:	}
+        -:   32:
+    16578:   33:	return outString;
+        -:   34:}
+        -:   35:
+        1:   36:void testme()
+        -:   37:{
+        1:   38:  int tcCount = 0;
+        -:   39:  char *s;
+        -:   40:  char c;
+        1:   41:  int state = 0;
+        -:   42:  while (1)
+        -:   43:  {
+    16578:   44:    tcCount++;
+    16578:   45:    c = inputChar();
+    16578:   46:    s = inputString();
+    16578:   47:    printf("Iteration %d: c = %c, s = %s, state = %d\n", tcCount, c, s, state);
+        -:   48:
+    16578:   49:    if (c == '[' && state == 0) state = 1;
+    16578:   50:    if (c == '(' && state == 1) state = 2;
+    16578:   51:    if (c == '{' && state == 2) state = 3;
+    16578:   52:    if (c == ' '&& state == 3) state = 4;
+    16578:   53:    if (c == 'a' && state == 4) state = 5;
+    16578:   54:    if (c == 'x' && state == 5) state = 6;
+    16578:   55:    if (c == '}' && state == 6) state = 7;
+    16578:   56:    if (c == ')' && state == 7) state = 8;
+    16578:   57:    if (c == ']' && state == 8) state = 9;
+    16578:   58:    if (s[0] == 'r' && s[1] == 'e'
+      456:   59:       && s[2] == 's' && s[3] == 'e'
+        8:   60:       && s[4] == 't' && s[5] == '\0'
+        1:   61:       && state == 9)
+        -:   62:    {
+        1:   63:      printf("error ");
+        1:   64:      exit(200);
+        -:   65:    }
+    16577:   66:  }
+        -:   67:}
+        -:   68:
+        -:   69:
+        1:   70:int main(int argc, char *argv[])
+        -:   71:{
+        1:   72:    srand(time(NULL));
+        1:   73:    testme();
+    #####:   74:    return 0;
+        -:   75:}
