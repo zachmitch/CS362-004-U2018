@@ -1,0 +1,2225 @@
+TEST RESULTS FOR ASSIGNMENT4: 
+
+Running 'randomtestcard1.c': 
+
+
+*********** RANDOM SMITHY TEST 1 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 10, PLYDCRDCT: 1
+HAND: [0] 13 [1] 17 
+
+                 * Play Smithy *                  
+
+Current hand count: 2
+Current hand count: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 7, PLYDCRDCT: 1
+HAND: [0] 14 [1] 17 [2] 0 [3] 0 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 1 FAILED
+
+
+*********** RANDOM SMITHY TEST 2 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 0, PLYDCRDCT: 0
+HAND: [0] 6 [1] 13 
+
+                 * Play Smithy *                  
+
+Deck count now: 3
+Current hand count: 2
+Current hand count: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 0, PLYDCRDCT: 0
+HAND: [0] 8 [1] 13 [2] 16 [3] 9 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 2 FAILED
+
+
+*********** RANDOM SMITHY TEST 3 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 10, PLYDCRDCT: 0
+HAND: [0] 13 [1] 19 
+
+                 * Play Smithy *                  
+
+Current hand count: 2
+Current hand count: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 7, PLYDCRDCT: 0
+HAND: [0] 4 [1] 19 [2] 5 [3] 18 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 3 FAILED
+
+
+*********** RANDOM SMITHY TEST 4 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 11, PLYDCRDCT: 1
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 8, PLYDCRDCT: 1
+HAND: [0] 1 [1] 8 [2] 17 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 4 FAILED
+
+
+*********** RANDOM SMITHY TEST 5 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 3, DECKCT: 9, PLYDCRDCT: 2
+HAND: [0] 6 [1] 17 [2] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 3
+Current hand count: 4
+Current hand count: 5
+AFTER SMITHY - HANDCT: 5, DECKCT: 6, PLYDCRDCT: 2
+HAND: [0] 26 [1] 17 [2] 13 [3] 2 [4] 23 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 5 FAILED
+
+
+*********** RANDOM SMITHY TEST 6 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 6
+
+BEFORE SMITHY - HANDCT: 7, DECKCT: 20, PLYDCRDCT: 2
+HAND: [0] 12 [1] 26 [2] 7 [3] 23 [4] 25 [5] 19 [6] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 7
+Current hand count: 8
+Current hand count: 9
+AFTER SMITHY - HANDCT: 9, DECKCT: 17, PLYDCRDCT: 2
+HAND: [0] 18 [1] 26 [2] 7 [3] 23 [4] 25 [5] 19 [6] 13 [7] 26 [8] 6 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 6 FAILED
+
+
+*********** RANDOM SMITHY TEST 7 ***************
+SETUP - PLYRS: 3, WHZTRN: 1, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 4, DECKCT: 19, PLYDCRDCT: 3
+HAND: [0] 6 [1] 9 [2] 13 [3] 3 
+
+                 * Play Smithy *                  
+
+Current hand count: 4
+Current hand count: 5
+Current hand count: 6
+AFTER SMITHY - HANDCT: 6, DECKCT: 16, PLYDCRDCT: 3
+HAND: [0] 22 [1] 9 [2] 13 [3] 3 [4] 15 [5] 26 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 7 FAILED
+
+
+*********** RANDOM SMITHY TEST 8 ***************
+SETUP - PLYRS: 3, WHZTRN: 1, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 3, DECKCT: 12, PLYDCRDCT: 2
+HAND: [0] 17 [1] 0 [2] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 3
+Current hand count: 4
+Current hand count: 5
+AFTER SMITHY - HANDCT: 5, DECKCT: 9, PLYDCRDCT: 2
+HAND: [0] 26 [1] 0 [2] 13 [3] 24 [4] 10 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 8 FAILED
+
+
+*********** RANDOM SMITHY TEST 9 ***************
+SETUP - PLYRS: 4, WHZTRN: 1, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 5, DECKCT: 2, PLYDCRDCT: 1
+HAND: [0] 1 [1] 3 [2] 13 [3] 6 [4] 23 
+
+                 * Play Smithy *                  
+
+Current hand count: 5
+Current hand count: 6
+Deck count now: 3
+Current hand count: 7
+AFTER SMITHY - HANDCT: 7, DECKCT: 2, PLYDCRDCT: 1
+HAND: [0] 14 [1] 3 [2] 13 [3] 6 [4] 23 [5] 20 [6] 24 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 9 FAILED
+
+
+*********** RANDOM SMITHY TEST 10 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 3
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 17, PLYDCRDCT: 1
+HAND: [0] 22 [1] 20 [2] 14 [3] 13 [4] 14 [5] 0 [6] 6 [7] 24 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 14, PLYDCRDCT: 1
+HAND: [0] 6 [1] 20 [2] 14 [3] 13 [4] 14 [5] 0 [6] 6 [7] 24 [8] 17 [9] 12 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 10 FAILED
+
+
+*********** RANDOM SMITHY TEST 11 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 16, PLYDCRDCT: 2
+HAND: [0] 21 [1] 9 [2] 13 [3] 19 [4] 20 [5] 5 [6] 18 [7] 10 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 13, PLYDCRDCT: 2
+HAND: [0] 11 [1] 9 [2] 13 [3] 19 [4] 20 [5] 5 [6] 18 [7] 10 [8] 3 [9] 14 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 11 FAILED
+
+
+*********** RANDOM SMITHY TEST 12 ***************
+SETUP - PLYRS: 3, WHZTRN: 0, SMITHYHANDPOS: 5
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 9, PLYDCRDCT: 2
+HAND: [0] 1 [1] 6 [2] 14 [3] 26 [4] 5 [5] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Current hand count: 7
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 6, PLYDCRDCT: 2
+HAND: [0] 20 [1] 6 [2] 14 [3] 26 [4] 5 [5] 13 [6] 6 [7] 7 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 12 FAILED
+
+
+*********** RANDOM SMITHY TEST 13 ***************
+SETUP - PLYRS: 3, WHZTRN: 1, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 3, DECKCT: 0, PLYDCRDCT: 1
+HAND: [0] 7 [1] 1 [2] 13 
+
+                 * Play Smithy *                  
+
+Deck count now: 3
+Current hand count: 3
+Current hand count: 4
+Current hand count: 5
+AFTER SMITHY - HANDCT: 5, DECKCT: 0, PLYDCRDCT: 1
+HAND: [0] 12 [1] 1 [2] 13 [3] 12 [4] 18 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 13 FAILED
+
+
+*********** RANDOM SMITHY TEST 14 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 3, DECKCT: 5, PLYDCRDCT: 0
+HAND: [0] 13 [1] 9 [2] 15 
+
+                 * Play Smithy *                  
+
+Current hand count: 3
+Current hand count: 4
+Current hand count: 5
+AFTER SMITHY - HANDCT: 5, DECKCT: 2, PLYDCRDCT: 0
+HAND: [0] 26 [1] 9 [2] 15 [3] 12 [4] 4 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 14 FAILED
+
+
+*********** RANDOM SMITHY TEST 15 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 5, DECKCT: 10, PLYDCRDCT: 0
+HAND: [0] 22 [1] 13 [2] 25 [3] 11 [4] 5 
+
+                 * Play Smithy *                  
+
+Current hand count: 5
+Current hand count: 6
+Current hand count: 7
+AFTER SMITHY - HANDCT: 7, DECKCT: 7, PLYDCRDCT: 0
+HAND: [0] 3 [1] 13 [2] 25 [3] 11 [4] 5 [5] 18 [6] 26 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 15 FAILED
+
+
+*********** RANDOM SMITHY TEST 16 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 5
+
+BEFORE SMITHY - HANDCT: 7, DECKCT: 17, PLYDCRDCT: 2
+HAND: [0] 5 [1] 15 [2] 21 [3] 9 [4] 9 [5] 13 [6] 21 
+
+                 * Play Smithy *                  
+
+Current hand count: 7
+Current hand count: 8
+Current hand count: 9
+AFTER SMITHY - HANDCT: 9, DECKCT: 14, PLYDCRDCT: 2
+HAND: [0] 20 [1] 15 [2] 21 [3] 9 [4] 9 [5] 13 [6] 21 [7] 2 [8] 5 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 16 FAILED
+
+
+*********** RANDOM SMITHY TEST 17 ***************
+SETUP - PLYRS: 4, WHZTRN: 1, SMITHYHANDPOS: 5
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 4, PLYDCRDCT: 3
+HAND: [0] 17 [1] 1 [2] 7 [3] 10 [4] 24 [5] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Current hand count: 7
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 1, PLYDCRDCT: 3
+HAND: [0] 9 [1] 1 [2] 7 [3] 10 [4] 24 [5] 13 [6] 26 [7] 16 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 17 FAILED
+
+
+*********** RANDOM SMITHY TEST 18 ***************
+SETUP - PLYRS: 3, WHZTRN: 0, SMITHYHANDPOS: 7
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 6, PLYDCRDCT: 1
+HAND: [0] 20 [1] 7 [2] 10 [3] 24 [4] 16 [5] 14 [6] 5 [7] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 3, PLYDCRDCT: 1
+HAND: [0] 22 [1] 7 [2] 10 [3] 24 [4] 16 [5] 14 [6] 5 [7] 13 [8] 10 [9] 10 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 18 FAILED
+
+
+*********** RANDOM SMITHY TEST 19 ***************
+SETUP - PLYRS: 4, WHZTRN: 0, SMITHYHANDPOS: 3
+
+BEFORE SMITHY - HANDCT: 5, DECKCT: 20, PLYDCRDCT: 2
+HAND: [0] 21 [1] 19 [2] 25 [3] 13 [4] 24 
+
+                 * Play Smithy *                  
+
+Current hand count: 5
+Current hand count: 6
+Current hand count: 7
+AFTER SMITHY - HANDCT: 7, DECKCT: 17, PLYDCRDCT: 2
+HAND: [0] 12 [1] 19 [2] 25 [3] 13 [4] 24 [5] 4 [6] 2 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 19 FAILED
+
+
+*********** RANDOM SMITHY TEST 20 ***************
+SETUP - PLYRS: 4, WHZTRN: 1, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 15, PLYDCRDCT: 2
+HAND: [0] 17 [1] 13 [2] 22 [3] 20 [4] 3 [5] 16 [6] 0 [7] 1 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 12, PLYDCRDCT: 2
+HAND: [0] 17 [1] 13 [2] 22 [3] 20 [4] 3 [5] 16 [6] 0 [7] 1 [8] 7 [9] 17 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 20 FAILED
+
+
+*********** RANDOM SMITHY TEST 21 ***************
+SETUP - PLYRS: 4, WHZTRN: 2, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 3, DECKCT: 9, PLYDCRDCT: 0
+HAND: [0] 2 [1] 13 [2] 21 
+
+                 * Play Smithy *                  
+
+Current hand count: 3
+Current hand count: 4
+Current hand count: 5
+AFTER SMITHY - HANDCT: 5, DECKCT: 6, PLYDCRDCT: 0
+HAND: [0] 8 [1] 13 [2] 21 [3] 22 [4] 17 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 21 FAILED
+
+
+*********** RANDOM SMITHY TEST 22 ***************
+SETUP - PLYRS: 3, WHZTRN: 1, SMITHYHANDPOS: 3
+
+BEFORE SMITHY - HANDCT: 5, DECKCT: 16, PLYDCRDCT: 2
+HAND: [0] 8 [1] 7 [2] 3 [3] 13 [4] 0 
+
+                 * Play Smithy *                  
+
+Current hand count: 5
+Current hand count: 6
+Current hand count: 7
+AFTER SMITHY - HANDCT: 7, DECKCT: 13, PLYDCRDCT: 2
+HAND: [0] 16 [1] 7 [2] 3 [3] 13 [4] 0 [5] 21 [6] 9 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 22 FAILED
+
+
+*********** RANDOM SMITHY TEST 23 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 4, DECKCT: 9, PLYDCRDCT: 0
+HAND: [0] 6 [1] 23 [2] 13 [3] 3 
+
+                 * Play Smithy *                  
+
+Current hand count: 4
+Current hand count: 5
+Current hand count: 6
+AFTER SMITHY - HANDCT: 6, DECKCT: 6, PLYDCRDCT: 0
+HAND: [0] 23 [1] 23 [2] 13 [3] 3 [4] 3 [5] 11 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 23 FAILED
+
+
+*********** RANDOM SMITHY TEST 24 ***************
+SETUP - PLYRS: 4, WHZTRN: 2, SMITHYHANDPOS: 5
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 8, PLYDCRDCT: 0
+HAND: [0] 6 [1] 16 [2] 22 [3] 21 [4] 8 [5] 13 [6] 17 [7] 3 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 5, PLYDCRDCT: 0
+HAND: [0] 9 [1] 16 [2] 22 [3] 21 [4] 8 [5] 13 [6] 17 [7] 3 [8] 2 [9] 26 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 24 FAILED
+
+
+*********** RANDOM SMITHY TEST 25 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 3, DECKCT: 11, PLYDCRDCT: 1
+HAND: [0] 13 [1] 12 [2] 10 
+
+                 * Play Smithy *                  
+
+Current hand count: 3
+Current hand count: 4
+Current hand count: 5
+AFTER SMITHY - HANDCT: 5, DECKCT: 8, PLYDCRDCT: 1
+HAND: [0] 12 [1] 12 [2] 10 [3] 3 [4] 21 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 25 FAILED
+
+
+*********** RANDOM SMITHY TEST 26 ***************
+SETUP - PLYRS: 4, WHZTRN: 2, SMITHYHANDPOS: 3
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 12, PLYDCRDCT: 3
+HAND: [0] 4 [1] 8 [2] 4 [3] 13 [4] 16 [5] 10 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Current hand count: 7
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 9, PLYDCRDCT: 3
+HAND: [0] 25 [1] 8 [2] 4 [3] 13 [4] 16 [5] 10 [6] 0 [7] 21 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 26 FAILED
+
+
+*********** RANDOM SMITHY TEST 27 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 3
+
+BEFORE SMITHY - HANDCT: 7, DECKCT: 0, PLYDCRDCT: 1
+HAND: [0] 16 [1] 25 [2] 6 [3] 13 [4] 26 [5] 11 [6] 8 
+
+                 * Play Smithy *                  
+
+Deck count now: 3
+Current hand count: 7
+Current hand count: 8
+Current hand count: 9
+AFTER SMITHY - HANDCT: 9, DECKCT: 0, PLYDCRDCT: 1
+HAND: [0] 20 [1] 25 [2] 6 [3] 13 [4] 26 [5] 11 [6] 8 [7] 14 [8] 1 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 27 FAILED
+
+
+*********** RANDOM SMITHY TEST 28 ***************
+SETUP - PLYRS: 4, WHZTRN: 3, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 4, PLYDCRDCT: 2
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 1, PLYDCRDCT: 2
+HAND: [0] 7 [1] 18 [2] 26 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 28 FAILED
+
+
+*********** RANDOM SMITHY TEST 29 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 5, DECKCT: 3, PLYDCRDCT: 1
+HAND: [0] 22 [1] 26 [2] 13 [3] 6 [4] 23 
+
+                 * Play Smithy *                  
+
+Current hand count: 5
+Current hand count: 6
+Current hand count: 7
+AFTER SMITHY - HANDCT: 7, DECKCT: 0, PLYDCRDCT: 1
+HAND: [0] 17 [1] 26 [2] 13 [3] 6 [4] 23 [5] 25 [6] 8 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 29 FAILED
+
+
+*********** RANDOM SMITHY TEST 30 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 6
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 4, PLYDCRDCT: 3
+HAND: [0] 2 [1] 18 [2] 26 [3] 9 [4] 3 [5] 18 [6] 13 [7] 21 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 1, PLYDCRDCT: 3
+HAND: [0] 20 [1] 18 [2] 26 [3] 9 [4] 3 [5] 18 [6] 13 [7] 21 [8] 5 [9] 2 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 30 FAILED
+
+
+*********** RANDOM SMITHY TEST 31 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 3
+
+BEFORE SMITHY - HANDCT: 4, DECKCT: 9, PLYDCRDCT: 1
+HAND: [0] 17 [1] 16 [2] 15 [3] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 4
+Current hand count: 5
+Current hand count: 6
+AFTER SMITHY - HANDCT: 6, DECKCT: 6, PLYDCRDCT: 1
+HAND: [0] 5 [1] 16 [2] 15 [3] 13 [4] 5 [5] 1 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 31 FAILED
+
+
+*********** RANDOM SMITHY TEST 32 ***************
+SETUP - PLYRS: 3, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 0, PLYDCRDCT: 0
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Deck count now: 3
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 0, PLYDCRDCT: 0
+HAND: [0] 10 [1] 21 [2] 9 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 32 FAILED
+
+
+*********** RANDOM SMITHY TEST 33 ***************
+SETUP - PLYRS: 3, WHZTRN: 0, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 3, DECKCT: 12, PLYDCRDCT: 3
+HAND: [0] 13 [1] 15 [2] 7 
+
+                 * Play Smithy *                  
+
+Current hand count: 3
+Current hand count: 4
+Current hand count: 5
+AFTER SMITHY - HANDCT: 5, DECKCT: 9, PLYDCRDCT: 3
+HAND: [0] 2 [1] 15 [2] 7 [3] 17 [4] 19 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 33 FAILED
+
+
+*********** RANDOM SMITHY TEST 34 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 11, PLYDCRDCT: 2
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 8, PLYDCRDCT: 2
+HAND: [0] 5 [1] 23 [2] 6 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 34 FAILED
+
+
+*********** RANDOM SMITHY TEST 35 ***************
+SETUP - PLYRS: 4, WHZTRN: 3, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 3, DECKCT: 1, PLYDCRDCT: 0
+HAND: [0] 15 [1] 13 [2] 5 
+
+                 * Play Smithy *                  
+
+Current hand count: 3
+Deck count now: 3
+Current hand count: 4
+Current hand count: 5
+AFTER SMITHY - HANDCT: 5, DECKCT: 1, PLYDCRDCT: 0
+HAND: [0] 21 [1] 13 [2] 5 [3] 4 [4] 14 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 35 FAILED
+
+
+*********** RANDOM SMITHY TEST 36 ***************
+SETUP - PLYRS: 3, WHZTRN: 1, SMITHYHANDPOS: 4
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 9, PLYDCRDCT: 2
+HAND: [0] 7 [1] 18 [2] 25 [3] 15 [4] 13 [5] 4 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Current hand count: 7
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 6, PLYDCRDCT: 2
+HAND: [0] 4 [1] 18 [2] 25 [3] 15 [4] 13 [5] 4 [6] 20 [7] 7 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 36 FAILED
+
+
+*********** RANDOM SMITHY TEST 37 ***************
+SETUP - PLYRS: 4, WHZTRN: 3, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 6, PLYDCRDCT: 0
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 3, PLYDCRDCT: 0
+HAND: [0] 18 [1] 18 [2] 5 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 37 FAILED
+
+
+*********** RANDOM SMITHY TEST 38 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 18, PLYDCRDCT: 3
+HAND: [0] 13 [1] 20 
+
+                 * Play Smithy *                  
+
+Current hand count: 2
+Current hand count: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 15, PLYDCRDCT: 3
+HAND: [0] 25 [1] 20 [2] 9 [3] 10 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 38 FAILED
+
+
+*********** RANDOM SMITHY TEST 39 ***************
+SETUP - PLYRS: 4, WHZTRN: 1, SMITHYHANDPOS: 3
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 1, PLYDCRDCT: 0
+HAND: [0] 17 [1] 11 [2] 14 [3] 13 [4] 22 [5] 5 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Deck count now: 3
+Current hand count: 7
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 1, PLYDCRDCT: 0
+HAND: [0] 2 [1] 11 [2] 14 [3] 13 [4] 22 [5] 5 [6] 4 [7] 17 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 39 FAILED
+
+
+*********** RANDOM SMITHY TEST 40 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 8, PLYDCRDCT: 1
+HAND: [0] 12 [1] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 2
+Current hand count: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 5, PLYDCRDCT: 1
+HAND: [0] 22 [1] 13 [2] 26 [3] 3 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 40 FAILED
+
+
+*********** RANDOM SMITHY TEST 41 ***************
+SETUP - PLYRS: 4, WHZTRN: 3, SMITHYHANDPOS: 4
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 2, PLYDCRDCT: 1
+HAND: [0] 23 [1] 3 [2] 16 [3] 7 [4] 13 [5] 18 [6] 24 [7] 18 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Deck count now: 3
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 2, PLYDCRDCT: 1
+HAND: [0] 17 [1] 3 [2] 16 [3] 7 [4] 13 [5] 18 [6] 24 [7] 18 [8] 22 [9] 3 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 41 FAILED
+
+
+*********** RANDOM SMITHY TEST 42 ***************
+SETUP - PLYRS: 3, WHZTRN: 2, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 7, DECKCT: 11, PLYDCRDCT: 2
+HAND: [0] 5 [1] 19 [2] 13 [3] 8 [4] 12 [5] 20 [6] 12 
+
+                 * Play Smithy *                  
+
+Current hand count: 7
+Current hand count: 8
+Current hand count: 9
+AFTER SMITHY - HANDCT: 9, DECKCT: 8, PLYDCRDCT: 2
+HAND: [0] 25 [1] 19 [2] 13 [3] 8 [4] 12 [5] 20 [6] 12 [7] 16 [8] 8 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 42 FAILED
+
+
+*********** RANDOM SMITHY TEST 43 ***************
+SETUP - PLYRS: 4, WHZTRN: 3, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 4, DECKCT: 12, PLYDCRDCT: 0
+HAND: [0] 13 [1] 5 [2] 21 [3] 18 
+
+                 * Play Smithy *                  
+
+Current hand count: 4
+Current hand count: 5
+Current hand count: 6
+AFTER SMITHY - HANDCT: 6, DECKCT: 9, PLYDCRDCT: 0
+HAND: [0] 11 [1] 5 [2] 21 [3] 18 [4] 4 [5] 23 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 43 FAILED
+
+
+*********** RANDOM SMITHY TEST 44 ***************
+SETUP - PLYRS: 3, WHZTRN: 2, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 13, PLYDCRDCT: 0
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 10, PLYDCRDCT: 0
+HAND: [0] 21 [1] 14 [2] 23 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 44 FAILED
+
+
+*********** RANDOM SMITHY TEST 45 ***************
+SETUP - PLYRS: 4, WHZTRN: 3, SMITHYHANDPOS: 5
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 20, PLYDCRDCT: 3
+HAND: [0] 12 [1] 22 [2] 6 [3] 14 [4] 8 [5] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Current hand count: 7
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 17, PLYDCRDCT: 3
+HAND: [0] 17 [1] 22 [2] 6 [3] 14 [4] 8 [5] 13 [6] 23 [7] 6 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 45 FAILED
+
+
+*********** RANDOM SMITHY TEST 46 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 7, DECKCT: 13, PLYDCRDCT: 0
+HAND: [0] 15 [1] 24 [2] 13 [3] 12 [4] 5 [5] 11 [6] 24 
+
+                 * Play Smithy *                  
+
+Current hand count: 7
+Current hand count: 8
+Current hand count: 9
+AFTER SMITHY - HANDCT: 9, DECKCT: 10, PLYDCRDCT: 0
+HAND: [0] 3 [1] 24 [2] 13 [3] 12 [4] 5 [5] 11 [6] 24 [7] 8 [8] 14 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 46 FAILED
+
+
+*********** RANDOM SMITHY TEST 47 ***************
+SETUP - PLYRS: 3, WHZTRN: 2, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 5, DECKCT: 18, PLYDCRDCT: 0
+HAND: [0] 13 [1] 14 [2] 3 [3] 18 [4] 0 
+
+                 * Play Smithy *                  
+
+Current hand count: 5
+Current hand count: 6
+Current hand count: 7
+AFTER SMITHY - HANDCT: 7, DECKCT: 15, PLYDCRDCT: 0
+HAND: [0] 25 [1] 14 [2] 3 [3] 18 [4] 0 [5] 9 [6] 16 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 47 FAILED
+
+
+*********** RANDOM SMITHY TEST 48 ***************
+SETUP - PLYRS: 4, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 20, PLYDCRDCT: 2
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 17, PLYDCRDCT: 2
+HAND: [0] 15 [1] 1 [2] 15 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 48 FAILED
+
+
+*********** RANDOM SMITHY TEST 49 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 19, PLYDCRDCT: 3
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 16, PLYDCRDCT: 3
+HAND: [0] 19 [1] 18 [2] 4 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 49 FAILED
+
+
+*********** RANDOM SMITHY TEST 50 ***************
+SETUP - PLYRS: 3, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 3, PLYDCRDCT: 1
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 0, PLYDCRDCT: 1
+HAND: [0] 19 [1] 24 [2] 22 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 50 FAILED
+
+
+*********** RANDOM SMITHY TEST 51 ***************
+SETUP - PLYRS: 3, WHZTRN: 0, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 10, PLYDCRDCT: 0
+HAND: [0] 13 [1] 15 
+
+                 * Play Smithy *                  
+
+Current hand count: 2
+Current hand count: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 7, PLYDCRDCT: 0
+HAND: [0] 17 [1] 15 [2] 24 [3] 10 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 51 FAILED
+
+
+*********** RANDOM SMITHY TEST 52 ***************
+SETUP - PLYRS: 3, WHZTRN: 2, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 7, DECKCT: 16, PLYDCRDCT: 1
+HAND: [0] 13 [1] 10 [2] 2 [3] 19 [4] 21 [5] 24 [6] 6 
+
+                 * Play Smithy *                  
+
+Current hand count: 7
+Current hand count: 8
+Current hand count: 9
+AFTER SMITHY - HANDCT: 9, DECKCT: 13, PLYDCRDCT: 1
+HAND: [0] 2 [1] 10 [2] 2 [3] 19 [4] 21 [5] 24 [6] 6 [7] 17 [8] 21 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 52 FAILED
+
+
+*********** RANDOM SMITHY TEST 53 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 4
+
+BEFORE SMITHY - HANDCT: 7, DECKCT: 5, PLYDCRDCT: 2
+HAND: [0] 2 [1] 25 [2] 16 [3] 25 [4] 13 [5] 23 [6] 23 
+
+                 * Play Smithy *                  
+
+Current hand count: 7
+Current hand count: 8
+Current hand count: 9
+AFTER SMITHY - HANDCT: 9, DECKCT: 2, PLYDCRDCT: 2
+HAND: [0] 20 [1] 25 [2] 16 [3] 25 [4] 13 [5] 23 [6] 23 [7] 14 [8] 24 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 53 FAILED
+
+
+*********** RANDOM SMITHY TEST 54 ***************
+SETUP - PLYRS: 4, WHZTRN: 3, SMITHYHANDPOS: 3
+
+BEFORE SMITHY - HANDCT: 5, DECKCT: 9, PLYDCRDCT: 0
+HAND: [0] 4 [1] 17 [2] 26 [3] 13 [4] 18 
+
+                 * Play Smithy *                  
+
+Current hand count: 5
+Current hand count: 6
+Current hand count: 7
+AFTER SMITHY - HANDCT: 7, DECKCT: 6, PLYDCRDCT: 0
+HAND: [0] 22 [1] 17 [2] 26 [3] 13 [4] 18 [5] 5 [6] 22 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 54 FAILED
+
+
+*********** RANDOM SMITHY TEST 55 ***************
+SETUP - PLYRS: 3, WHZTRN: 2, SMITHYHANDPOS: 5
+
+BEFORE SMITHY - HANDCT: 7, DECKCT: 10, PLYDCRDCT: 0
+HAND: [0] 25 [1] 20 [2] 12 [3] 21 [4] 5 [5] 13 [6] 23 
+
+                 * Play Smithy *                  
+
+Current hand count: 7
+Current hand count: 8
+Current hand count: 9
+AFTER SMITHY - HANDCT: 9, DECKCT: 7, PLYDCRDCT: 0
+HAND: [0] 16 [1] 20 [2] 12 [3] 21 [4] 5 [5] 13 [6] 23 [7] 3 [8] 17 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 55 FAILED
+
+
+*********** RANDOM SMITHY TEST 56 ***************
+SETUP - PLYRS: 3, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 17, PLYDCRDCT: 3
+HAND: [0] 13 [1] 8 [2] 5 [3] 4 [4] 23 [5] 3 [6] 14 [7] 9 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 14, PLYDCRDCT: 3
+HAND: [0] 9 [1] 8 [2] 5 [3] 4 [4] 23 [5] 3 [6] 14 [7] 9 [8] 0 [9] 23 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 56 FAILED
+
+
+*********** RANDOM SMITHY TEST 57 ***************
+SETUP - PLYRS: 3, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 16, PLYDCRDCT: 0
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 13, PLYDCRDCT: 0
+HAND: [0] 16 [1] 7 [2] 17 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 57 FAILED
+
+
+*********** RANDOM SMITHY TEST 58 ***************
+SETUP - PLYRS: 4, WHZTRN: 0, SMITHYHANDPOS: 5
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 19, PLYDCRDCT: 2
+HAND: [0] 0 [1] 2 [2] 18 [3] 6 [4] 22 [5] 13 [6] 15 [7] 9 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 16, PLYDCRDCT: 2
+HAND: [0] 7 [1] 2 [2] 18 [3] 6 [4] 22 [5] 13 [6] 15 [7] 9 [8] 22 [9] 20 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 58 FAILED
+
+
+*********** RANDOM SMITHY TEST 59 ***************
+SETUP - PLYRS: 4, WHZTRN: 2, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 15, PLYDCRDCT: 3
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 12, PLYDCRDCT: 3
+HAND: [0] 8 [1] 19 [2] 11 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 59 FAILED
+
+
+*********** RANDOM SMITHY TEST 60 ***************
+SETUP - PLYRS: 4, WHZTRN: 0, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 11, PLYDCRDCT: 2
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 8, PLYDCRDCT: 2
+HAND: [0] 5 [1] 18 [2] 2 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 60 FAILED
+
+
+*********** RANDOM SMITHY TEST 61 ***************
+SETUP - PLYRS: 3, WHZTRN: 2, SMITHYHANDPOS: 5
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 8, PLYDCRDCT: 0
+HAND: [0] 22 [1] 4 [2] 19 [3] 19 [4] 12 [5] 13 [6] 5 [7] 2 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 5, PLYDCRDCT: 0
+HAND: [0] 3 [1] 4 [2] 19 [3] 19 [4] 12 [5] 13 [6] 5 [7] 2 [8] 26 [9] 26 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 61 FAILED
+
+
+*********** RANDOM SMITHY TEST 62 ***************
+SETUP - PLYRS: 4, WHZTRN: 2, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 4, DECKCT: 7, PLYDCRDCT: 1
+HAND: [0] 14 [1] 23 [2] 13 [3] 0 
+
+                 * Play Smithy *                  
+
+Current hand count: 4
+Current hand count: 5
+Current hand count: 6
+AFTER SMITHY - HANDCT: 6, DECKCT: 4, PLYDCRDCT: 1
+HAND: [0] 3 [1] 23 [2] 13 [3] 0 [4] 15 [5] 25 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 62 FAILED
+
+
+*********** RANDOM SMITHY TEST 63 ***************
+SETUP - PLYRS: 4, WHZTRN: 1, SMITHYHANDPOS: 4
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 2, PLYDCRDCT: 3
+HAND: [0] 25 [1] 12 [2] 22 [3] 16 [4] 13 [5] 26 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Current hand count: 7
+Deck count now: 3
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 2, PLYDCRDCT: 3
+HAND: [0] 16 [1] 12 [2] 22 [3] 16 [4] 13 [5] 26 [6] 0 [7] 2 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 63 FAILED
+
+
+*********** RANDOM SMITHY TEST 64 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 18, PLYDCRDCT: 1
+HAND: [0] 13 [1] 3 [2] 10 [3] 7 [4] 19 [5] 3 [6] 15 [7] 14 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 15, PLYDCRDCT: 1
+HAND: [0] 26 [1] 3 [2] 10 [3] 7 [4] 19 [5] 3 [6] 15 [7] 14 [8] 6 [9] 2 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 64 FAILED
+
+
+*********** RANDOM SMITHY TEST 65 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 5, DECKCT: 15, PLYDCRDCT: 0
+HAND: [0] 9 [1] 16 [2] 13 [3] 22 [4] 6 
+
+                 * Play Smithy *                  
+
+Current hand count: 5
+Current hand count: 6
+Current hand count: 7
+AFTER SMITHY - HANDCT: 7, DECKCT: 12, PLYDCRDCT: 0
+HAND: [0] 18 [1] 16 [2] 13 [3] 22 [4] 6 [5] 4 [6] 22 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 65 FAILED
+
+
+*********** RANDOM SMITHY TEST 66 ***************
+SETUP - PLYRS: 4, WHZTRN: 2, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 4, DECKCT: 0, PLYDCRDCT: 1
+HAND: [0] 13 [1] 18 [2] 19 [3] 2 
+
+                 * Play Smithy *                  
+
+Deck count now: 3
+Current hand count: 4
+Current hand count: 5
+Current hand count: 6
+AFTER SMITHY - HANDCT: 6, DECKCT: 0, PLYDCRDCT: 1
+HAND: [0] 22 [1] 18 [2] 19 [3] 2 [4] 14 [5] 2 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 66 FAILED
+
+
+*********** RANDOM SMITHY TEST 67 ***************
+SETUP - PLYRS: 3, WHZTRN: 2, SMITHYHANDPOS: 3
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 15, PLYDCRDCT: 2
+HAND: [0] 25 [1] 20 [2] 14 [3] 13 [4] 1 [5] 23 [6] 25 [7] 20 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 12, PLYDCRDCT: 2
+HAND: [0] 7 [1] 20 [2] 14 [3] 13 [4] 1 [5] 23 [6] 25 [7] 20 [8] 15 [9] 3 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 67 FAILED
+
+
+*********** RANDOM SMITHY TEST 68 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 9, PLYDCRDCT: 1
+HAND: [0] 20 [1] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 2
+Current hand count: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 6, PLYDCRDCT: 1
+HAND: [0] 16 [1] 13 [2] 24 [3] 24 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 68 FAILED
+
+
+*********** RANDOM SMITHY TEST 69 ***************
+SETUP - PLYRS: 4, WHZTRN: 0, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 7, DECKCT: 3, PLYDCRDCT: 0
+HAND: [0] 13 [1] 11 [2] 4 [3] 26 [4] 5 [5] 21 [6] 7 
+
+                 * Play Smithy *                  
+
+Current hand count: 7
+Current hand count: 8
+Current hand count: 9
+AFTER SMITHY - HANDCT: 9, DECKCT: 0, PLYDCRDCT: 0
+HAND: [0] 16 [1] 11 [2] 4 [3] 26 [4] 5 [5] 21 [6] 7 [7] 21 [8] 11 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 69 FAILED
+
+
+*********** RANDOM SMITHY TEST 70 ***************
+SETUP - PLYRS: 4, WHZTRN: 1, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 8, PLYDCRDCT: 3
+HAND: [0] 19 [1] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 2
+Current hand count: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 5, PLYDCRDCT: 3
+HAND: [0] 15 [1] 13 [2] 17 [3] 22 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 70 FAILED
+
+
+*********** RANDOM SMITHY TEST 71 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 5, DECKCT: 10, PLYDCRDCT: 2
+HAND: [0] 22 [1] 13 [2] 18 [3] 2 [4] 6 
+
+                 * Play Smithy *                  
+
+Current hand count: 5
+Current hand count: 6
+Current hand count: 7
+AFTER SMITHY - HANDCT: 7, DECKCT: 7, PLYDCRDCT: 2
+HAND: [0] 21 [1] 13 [2] 18 [3] 2 [4] 6 [5] 25 [6] 15 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 71 FAILED
+
+
+*********** RANDOM SMITHY TEST 72 ***************
+SETUP - PLYRS: 3, WHZTRN: 0, SMITHYHANDPOS: 4
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 14, PLYDCRDCT: 3
+HAND: [0] 17 [1] 11 [2] 3 [3] 24 [4] 13 [5] 0 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Current hand count: 7
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 11, PLYDCRDCT: 3
+HAND: [0] 24 [1] 11 [2] 3 [3] 24 [4] 13 [5] 0 [6] 8 [7] 7 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 72 FAILED
+
+
+*********** RANDOM SMITHY TEST 73 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 3, DECKCT: 3, PLYDCRDCT: 0
+HAND: [0] 13 [1] 0 [2] 21 
+
+                 * Play Smithy *                  
+
+Current hand count: 3
+Current hand count: 4
+Current hand count: 5
+AFTER SMITHY - HANDCT: 5, DECKCT: 0, PLYDCRDCT: 0
+HAND: [0] 15 [1] 0 [2] 21 [3] 23 [4] 4 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 73 FAILED
+
+
+*********** RANDOM SMITHY TEST 74 ***************
+SETUP - PLYRS: 3, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 11, PLYDCRDCT: 1
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 8, PLYDCRDCT: 1
+HAND: [0] 7 [1] 6 [2] 21 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 74 FAILED
+
+
+*********** RANDOM SMITHY TEST 75 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 6, PLYDCRDCT: 0
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 3, PLYDCRDCT: 0
+HAND: [0] 5 [1] 15 [2] 4 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 75 FAILED
+
+
+*********** RANDOM SMITHY TEST 76 ***************
+SETUP - PLYRS: 3, WHZTRN: 2, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 11, PLYDCRDCT: 0
+HAND: [0] 13 [1] 16 [2] 7 [3] 18 [4] 12 [5] 17 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Current hand count: 7
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 8, PLYDCRDCT: 0
+HAND: [0] 21 [1] 16 [2] 7 [3] 18 [4] 12 [5] 17 [6] 9 [7] 3 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 76 FAILED
+
+
+*********** RANDOM SMITHY TEST 77 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 3
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 18, PLYDCRDCT: 0
+HAND: [0] 23 [1] 8 [2] 2 [3] 13 [4] 10 [5] 11 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Current hand count: 7
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 15, PLYDCRDCT: 0
+HAND: [0] 8 [1] 8 [2] 2 [3] 13 [4] 10 [5] 11 [6] 26 [7] 4 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 77 FAILED
+
+
+*********** RANDOM SMITHY TEST 78 ***************
+SETUP - PLYRS: 3, WHZTRN: 0, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 3, DECKCT: 15, PLYDCRDCT: 1
+HAND: [0] 6 [1] 11 [2] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 3
+Current hand count: 4
+Current hand count: 5
+AFTER SMITHY - HANDCT: 5, DECKCT: 12, PLYDCRDCT: 1
+HAND: [0] 9 [1] 11 [2] 13 [3] 2 [4] 15 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 78 FAILED
+
+
+*********** RANDOM SMITHY TEST 79 ***************
+SETUP - PLYRS: 4, WHZTRN: 3, SMITHYHANDPOS: 4
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 19, PLYDCRDCT: 0
+HAND: [0] 0 [1] 16 [2] 25 [3] 0 [4] 13 [5] 21 [6] 6 [7] 20 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 16, PLYDCRDCT: 0
+HAND: [0] 26 [1] 16 [2] 25 [3] 0 [4] 13 [5] 21 [6] 6 [7] 20 [8] 0 [9] 25 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 79 FAILED
+
+
+*********** RANDOM SMITHY TEST 80 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 4, PLYDCRDCT: 3
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 1, PLYDCRDCT: 3
+HAND: [0] 5 [1] 9 [2] 15 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 80 FAILED
+
+
+*********** RANDOM SMITHY TEST 81 ***************
+SETUP - PLYRS: 3, WHZTRN: 0, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 8, PLYDCRDCT: 1
+HAND: [0] 13 [1] 12 
+
+                 * Play Smithy *                  
+
+Current hand count: 2
+Current hand count: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 5, PLYDCRDCT: 1
+HAND: [0] 21 [1] 12 [2] 12 [3] 24 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 81 FAILED
+
+
+*********** RANDOM SMITHY TEST 82 ***************
+SETUP - PLYRS: 3, WHZTRN: 0, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 3, PLYDCRDCT: 3
+HAND: [0] 6 [1] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 2
+Current hand count: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 0, PLYDCRDCT: 3
+HAND: [0] 20 [1] 13 [2] 25 [3] 12 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 82 FAILED
+
+
+*********** RANDOM SMITHY TEST 83 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 13, PLYDCRDCT: 1
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 10, PLYDCRDCT: 1
+HAND: [0] 9 [1] 11 [2] 10 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 83 FAILED
+
+
+*********** RANDOM SMITHY TEST 84 ***************
+SETUP - PLYRS: 2, WHZTRN: 0, SMITHYHANDPOS: 4
+
+BEFORE SMITHY - HANDCT: 7, DECKCT: 6, PLYDCRDCT: 2
+HAND: [0] 3 [1] 5 [2] 18 [3] 11 [4] 13 [5] 24 [6] 19 
+
+                 * Play Smithy *                  
+
+Current hand count: 7
+Current hand count: 8
+Current hand count: 9
+AFTER SMITHY - HANDCT: 9, DECKCT: 3, PLYDCRDCT: 2
+HAND: [0] 4 [1] 5 [2] 18 [3] 11 [4] 13 [5] 24 [6] 19 [7] 0 [8] 12 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 84 FAILED
+
+
+*********** RANDOM SMITHY TEST 85 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 10, PLYDCRDCT: 0
+HAND: [0] 16 [1] 10 [2] 13 [3] 7 [4] 21 [5] 9 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Current hand count: 7
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 7, PLYDCRDCT: 0
+HAND: [0] 16 [1] 10 [2] 13 [3] 7 [4] 21 [5] 9 [6] 15 [7] 12 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 85 FAILED
+
+
+*********** RANDOM SMITHY TEST 86 ***************
+SETUP - PLYRS: 4, WHZTRN: 3, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 13, PLYDCRDCT: 1
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 10, PLYDCRDCT: 1
+HAND: [0] 14 [1] 25 [2] 11 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 86 FAILED
+
+
+*********** RANDOM SMITHY TEST 87 ***************
+SETUP - PLYRS: 4, WHZTRN: 1, SMITHYHANDPOS: 6
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 4, PLYDCRDCT: 2
+HAND: [0] 7 [1] 9 [2] 12 [3] 2 [4] 23 [5] 3 [6] 13 [7] 1 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 1, PLYDCRDCT: 2
+HAND: [0] 22 [1] 9 [2] 12 [3] 2 [4] 23 [5] 3 [6] 13 [7] 1 [8] 15 [9] 9 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 87 FAILED
+
+
+*********** RANDOM SMITHY TEST 88 ***************
+SETUP - PLYRS: 3, WHZTRN: 0, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 7, DECKCT: 0, PLYDCRDCT: 1
+HAND: [0] 25 [1] 13 [2] 22 [3] 5 [4] 10 [5] 18 [6] 17 
+
+                 * Play Smithy *                  
+
+Deck count now: 3
+Current hand count: 7
+Current hand count: 8
+Current hand count: 9
+AFTER SMITHY - HANDCT: 9, DECKCT: 0, PLYDCRDCT: 1
+HAND: [0] 5 [1] 13 [2] 22 [3] 5 [4] 10 [5] 18 [6] 17 [7] 21 [8] 12 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 88 FAILED
+
+
+*********** RANDOM SMITHY TEST 89 ***************
+SETUP - PLYRS: 4, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 9, PLYDCRDCT: 0
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 6, PLYDCRDCT: 0
+HAND: [0] 3 [1] 3 [2] 0 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 89 FAILED
+
+
+*********** RANDOM SMITHY TEST 90 ***************
+SETUP - PLYRS: 4, WHZTRN: 3, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 18, PLYDCRDCT: 2
+HAND: [0] 0 [1] 13 [2] 7 [3] 17 [4] 20 [5] 5 [6] 2 [7] 25 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 15, PLYDCRDCT: 2
+HAND: [0] 21 [1] 13 [2] 7 [3] 17 [4] 20 [5] 5 [6] 2 [7] 25 [8] 26 [9] 4 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 90 FAILED
+
+
+*********** RANDOM SMITHY TEST 91 ***************
+SETUP - PLYRS: 4, WHZTRN: 3, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 5, PLYDCRDCT: 1
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 2, PLYDCRDCT: 1
+HAND: [0] 14 [1] 18 [2] 18 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 91 FAILED
+
+
+*********** RANDOM SMITHY TEST 92 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 20, PLYDCRDCT: 2
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 17, PLYDCRDCT: 2
+HAND: [0] 25 [1] 24 [2] 7 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 92 FAILED
+
+
+*********** RANDOM SMITHY TEST 93 ***************
+SETUP - PLYRS: 3, WHZTRN: 1, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 4, DECKCT: 0, PLYDCRDCT: 3
+HAND: [0] 3 [1] 11 [2] 13 [3] 6 
+
+                 * Play Smithy *                  
+
+Deck count now: 3
+Current hand count: 4
+Current hand count: 5
+Current hand count: 6
+AFTER SMITHY - HANDCT: 6, DECKCT: 0, PLYDCRDCT: 3
+HAND: [0] 25 [1] 11 [2] 13 [3] 6 [4] 23 [5] 21 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 93 FAILED
+
+
+*********** RANDOM SMITHY TEST 94 ***************
+SETUP - PLYRS: 4, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 2, PLYDCRDCT: 1
+HAND: [0] 13 [1] 8 
+
+                 * Play Smithy *                  
+
+Current hand count: 2
+Current hand count: 3
+Deck count now: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 2, PLYDCRDCT: 1
+HAND: [0] 15 [1] 8 [2] 14 [3] 21 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 94 FAILED
+
+
+*********** RANDOM SMITHY TEST 95 ***************
+SETUP - PLYRS: 4, WHZTRN: 2, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 8, DECKCT: 9, PLYDCRDCT: 0
+HAND: [0] 4 [1] 21 [2] 13 [3] 11 [4] 0 [5] 5 [6] 17 [7] 11 
+
+                 * Play Smithy *                  
+
+Current hand count: 8
+Current hand count: 9
+Current hand count: 10
+AFTER SMITHY - HANDCT: 10, DECKCT: 6, PLYDCRDCT: 0
+HAND: [0] 12 [1] 21 [2] 13 [3] 11 [4] 0 [5] 5 [6] 17 [7] 11 [8] 1 [9] 2 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 95 FAILED
+
+
+*********** RANDOM SMITHY TEST 96 ***************
+SETUP - PLYRS: 4, WHZTRN: 0, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 2, DECKCT: 19, PLYDCRDCT: 3
+HAND: [0] 7 [1] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 2
+Current hand count: 3
+Current hand count: 4
+AFTER SMITHY - HANDCT: 4, DECKCT: 16, PLYDCRDCT: 3
+HAND: [0] 18 [1] 13 [2] 15 [3] 1 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 96 FAILED
+
+
+*********** RANDOM SMITHY TEST 97 ***************
+SETUP - PLYRS: 3, WHZTRN: 2, SMITHYHANDPOS: 1
+
+BEFORE SMITHY - HANDCT: 6, DECKCT: 9, PLYDCRDCT: 0
+HAND: [0] 24 [1] 13 [2] 19 [3] 6 [4] 8 [5] 15 
+
+                 * Play Smithy *                  
+
+Current hand count: 6
+Current hand count: 7
+Current hand count: 8
+AFTER SMITHY - HANDCT: 8, DECKCT: 6, PLYDCRDCT: 0
+HAND: [0] 26 [1] 13 [2] 19 [3] 6 [4] 8 [5] 15 [6] 20 [7] 20 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 97 FAILED
+
+
+*********** RANDOM SMITHY TEST 98 ***************
+SETUP - PLYRS: 4, WHZTRN: 2, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 9, PLYDCRDCT: 0
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 6, PLYDCRDCT: 0
+HAND: [0] 21 [1] 20 [2] 25 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 98 FAILED
+
+
+*********** RANDOM SMITHY TEST 99 ***************
+SETUP - PLYRS: 2, WHZTRN: 1, SMITHYHANDPOS: 0
+
+BEFORE SMITHY - HANDCT: 1, DECKCT: 9, PLYDCRDCT: 1
+HAND: [0] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 1
+Current hand count: 2
+Current hand count: 3
+AFTER SMITHY - HANDCT: 3, DECKCT: 6, PLYDCRDCT: 1
+HAND: [0] 8 [1] 20 [2] 4 
+
+TEST SUCCESS: HANDCOUNT
+TEST SUCCESS: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 99 FAILED
+
+
+*********** RANDOM SMITHY TEST 100 ***************
+SETUP - PLYRS: 3, WHZTRN: 2, SMITHYHANDPOS: 2
+
+BEFORE SMITHY - HANDCT: 3, DECKCT: 7, PLYDCRDCT: 2
+HAND: [0] 8 [1] 15 [2] 13 
+
+                 * Play Smithy *                  
+
+Current hand count: 3
+Current hand count: 4
+Current hand count: 5
+AFTER SMITHY - HANDCT: 5, DECKCT: 4, PLYDCRDCT: 2
+HAND: [0] 6 [1] 15 [2] 13 [3] 18 [4] 16 
+
+TEST SUCCESS: HANDCOUNT
+TEST FAILURE: CARD REMOVED
+TEST SUCCESS: DECKCOUNT
+TEST FAILURE: PLYD CARD COUNT
+
+         TEST 100 FAILED
+
+   *** PASSED 0/100 TESTS ATTEMPTED ***
+
+
+GCOV RESULTS FOR SMITHY
+File 'dominion.c'
+Lines executed:13.32% of 578
+Creating 'dominion.c.gcov'
+
