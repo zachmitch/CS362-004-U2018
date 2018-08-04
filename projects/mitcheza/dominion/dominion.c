@@ -1293,7 +1293,7 @@ int adventurerAction(int currentPlayer, struct gameState *state, int handPos, in
 		drawCard(currentPlayer, state);
 		cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
 	
-		if (cardDrawn == copper || cardDrawn == adventurer || cardDrawn == gold)
+		if (cardDrawn == copper || cardDrawn == council_room || cardDrawn == gold)
 	  		drawntreasure++;
 		else{
 	  		temphand[z]=cardDrawn;

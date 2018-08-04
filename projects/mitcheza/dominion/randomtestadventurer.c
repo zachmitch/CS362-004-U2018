@@ -24,7 +24,7 @@ int testAdventurerRandom(int tests){
 	
 
 	int i, j;  //iterators
-	int b4_handCount, b4_deckCount, b4_playedCardCount, b4_discard;  //Counts before execute card
+	int b4_handCount, b4_deckCount, b4_discard;  //Counts before execute card
 	int success; //1 == success, 0 == failure
 	int passed = 0;
 
@@ -32,7 +32,7 @@ int testAdventurerRandom(int tests){
 
 	for (i = 0; i < tests; i++) {
 
-		printf("\n\n*********** RANDOM SMITHY TEST %d ***************\n", i + 1);
+		printf("\n\n*********** RANDOM ADVENTURER TEST %d ***************\n", i + 1);
 
 		success = 1;		
 
@@ -42,6 +42,7 @@ int testAdventurerRandom(int tests){
 
 		gs->phase = 0;
 		gs->numActions = 1;
+		gs->playedCardCount = 0;
 
 		//Random number of players between 2-MAX_PLAYERS
 		gs->numPlayers = (rand() % (MAX_PLAYERS - 1)) + 2;
@@ -49,58 +50,48 @@ int testAdventurerRandom(int tests){
 		//Random players turn
 		gs->whoseTurn = rand() % gs->numPlayers;
 
-		//Create a random hand of cards between 1-8
-		gs->handCount[gs->whoseTurn] = b4_handCount = (rand() % 8) + 1;
+		//Create a random hand of cards between 2-5 (no treasures)
+		gs->handCount[gs->whoseTurn] = b4_handCount = (rand() % 4) + 2;
 
-		//Randomly fill hand with cards from the dominion deck
+		//Fill that hand with non treasure cards
+		int randomCard, randomCards[] = {curse, duchy, council_room, feast, 
+			adventurer,copper, silver, gold};
+
+		//Randomly fill hand with cards from the dominion deck in randomCards
+		//  from position 0-3 only (avoid having treasure cards in hand for 
+		//  easier validation)
 		for(j = 0; j < gs->handCount[gs->whoseTurn]; j++) {
-			int randCard = 13;  //Make sure only smithy card in deck
-			while (randCard == 13) { randCard = rand() % 27;}
-			gs->hand[gs->whoseTurn][j] = randCard;
+			randomCard = randomCards[rand() % 4];
+			gs->hand[gs->whoseTurn][j] = randomCard;
 		}
 
-		//Randomly place smithy card in hand
-		int smithyLoc;
-		smithyLoc = rand() % gs->handCount[gs->whoseTurn];
-		gs->hand[gs->whoseTurn][smithyLoc] = 13;
+		//Randomly place adventurer card in hand
+		int advPos;
+		advPos = rand() % gs->handCount[gs->whoseTurn];
+		gs->hand[gs->whoseTurn][advPos] = 7;
 
-		//Randomly generate deck and size, between 0 - 20
+
+
+		//Randomly generate deck and size, between 20 - 30
 		//Then randomly fill in cards from dominion
-		gs->deckCount[gs->whoseTurn] = b4_deckCount = rand() % 21;
+		gs->deckCount[gs->whoseTurn] = b4_deckCount = (rand() % 21) + 10;
 		for(j = 0; j < gs->deckCount[gs->whoseTurn]; j++) {
-			int randCard = 13;  //Make sure only smithy card in deck
-			while (randCard == 13) { randCard = rand() % 27;}
-			gs->deck[gs->whoseTurn][j] = randCard;
+			randomCard = randomCards[rand() % 8];	
+			gs->deck[gs->whoseTurn][j] = randomCard;
 		}
-		
-		//Randomly generate played card count for this players turn (0-3)
-		// Then randomly fill in cards from dominion
-		gs->playedCardCount = b4_playedCardCount = rand() % 4;
-		for(j = 0; j < gs->playedCardCount; j++) {
-			int randCard = 13;  //Make sure only smithy card in deck
-			while (randCard == 13) { randCard = rand() % 27;}
-			gs->playedCards[j] = randCard;
-		}
-
-
-		//Randomly generate discard card count for this players turn (3-6)
-		// Then randomly fill in cards from dominion
-		gs->discardCount[gs->whoseTurn] = b4_discard = 3;
-		for(j = 0; j < gs->discardCount[gs->whoseTurn]; j++) {
-			int randCard = 13;  //Make sure only smithy card in deck
-			while (randCard == 13) { randCard = rand() % 27;}
-			gs->discard[gs->whoseTurn][j] = randCard;
-		}
+	
+		//Set discard as empty	
+		gs->discardCount[gs->whoseTurn] = b4_discard = 0;
 
 
 		//Let user know the card totals before and after playcard
-		printf("SETUP - PLYRS: %d, WHZTRN: %d, SMITHYHANDPOS: %d\n",
-			gs->numPlayers, gs->whoseTurn, smithyLoc);
+		printf("SETUP - PLYRS: %d, WHZTRN: %d\n",
+			gs->numPlayers, gs->whoseTurn);
 		
 		//prints hand counts	
-		printf("\nBEFORE SMITHY - HANDCT: %d, DECKCT: %d, PLYDCRDCT: %d\n",
-			gs->handCount[gs->whoseTurn], gs->deckCount[gs->whoseTurn],
-			gs->playedCardCount);
+		printf("\nBEFORE - HANDCT: %d, ADVPOS: %d, DECKCT: %d, DSCDCT: %d\n",
+			gs->handCount[gs->whoseTurn], advPos, gs->deckCount[gs->whoseTurn],
+			gs->discardCount[gs->whoseTurn]);
 
 		//prints hand
 		printf("HAND: ");
@@ -109,72 +100,76 @@ int testAdventurerRandom(int tests){
 		}
 
 
-		//Play the smithy card
-		printf("\n\n                 * Play Smithy *                  \n\n");
-//		playCard(smithyLoc, 1, 1, 1, gs);
+		//Play the adventurer card
+		printf("\n\n                 * Play Adventurer *                  \n\n");
+	
 		int neg1 = -1;
-		cardEffect(smithy, neg1, neg1, neg1, gs, 0, &neg1);
-		
+		cardEffect(adventurer, neg1, neg1, neg1, gs, 0, &neg1);
+	
+
+
+		//Count how many treasures added to hand
+		int treasureCount = 0;
+		for(j = 0; j < gs->handCount[gs->whoseTurn]; j++) {
+			if ( gs->hand[gs->whoseTurn][j] == copper ||
+			     gs->hand[gs->whoseTurn][j] == silver ||
+			     gs->hand[gs->whoseTurn][j] == gold) { 
+					treasureCount++;
+			}
+		}
+
 		//prints handcounts
-		printf("AFTER SMITHY - HANDCT: %d, DECKCT: %d, PLYDCRDCT: %d\n",
+		printf("AFTER  - HANDCT: %d, DECKCT: %d, DSCDCT: %d, TREASURE_CT: %d\n",
 			gs->handCount[gs->whoseTurn], gs->deckCount[gs->whoseTurn],
-			gs->playedCardCount);
-
-
-
+			gs->discardCount[gs->whoseTurn], treasureCount);
 
 		
 
-		//Check hand, hand count, deck count, and played card counts to confirm correct
+		//Check hand
 		printf("HAND: ");
 		for(j = 0; j < gs->handCount[gs->whoseTurn]; j++) {
 			printf("[%d] %d ",j, gs->hand[gs->whoseTurn][j]);
 		}
 
-		//hand should be net +2 cards
-		if( (b4_handCount + 2) == gs->handCount[gs->whoseTurn]) {
-			printf("\n\nTEST SUCCESS: HANDCOUNT\n");
+		//Test to run
+		// 1. +2 treasure in hand
+		// 2. adventurer placed in played cards pile
+		// 3. non-treasure cards discarded
+		// 4. handcount net +1
+
+
+		// 1. +2 treasure
+		if (treasureCount == 2) {
+			printf("\n\nTEST SUCCESS:  +2 TREASURES TO HAND\n");
 		} else {
-			printf("\nTEST FAILURE: HANDCOUNT\n");
+			printf("\n\nTEST FAILURE:  +2 TREASURES TO HAND\n");
 			success = 0;
 		}
 
-		//Make sure that smithy is no longer in hand
-		if (gs->hand[gs->whoseTurn][smithyLoc] != smithy) {
-			printf("TEST SUCCESS: CARD REMOVED\n");
+		//2.  adventurer in played cards pile
+		if (gs->playedCardCount == 1 && gs->playedCards[0] == adventurer) {
+			printf("TEST SUCCESS:  ADVENTURER PLACED IN PLAYED CARDS\n");
 		} else {
-			printf("TEST FAILURE: CARD REMOVED\n");
+			printf("TEST FAILURE:  ADVENTURER PLACED IN PLAYED CARDS\n");
 			success = 0;
 		}
 
-	
-		//Deck count should be net -3 cards, put 3 cards in discard 
-		// in case deck was empty
-		if (b4_deckCount >= 3) {
-			if ((b4_deckCount - 3) == gs->deckCount[gs->whoseTurn]) {
-				printf("TEST SUCCESS: DECKCOUNT\n");
-			} else {
-				printf("TEST FAILURE: DECKCOUNT\n");
-				success = 0;
-			}
+		// 3. non treasure discarded
+		if ( gs->deckCount[gs->whoseTurn] == ((b4_deckCount - 2) - gs->discardCount[gs->whoseTurn])) {
+			printf("TEST SUCCESS:  CORRECT # OF CARDS DISCARDED\n");
 		} else {
-			if(b4_deckCount == gs->deckCount[gs->whoseTurn]) {
-				printf("TEST SUCCESS: DECKCOUNT\n");
-			} else {
-				printf("TEST FAILURE: DECKCOUNT\n");
-				success = 0;
-			}
-		}
-
-
-
-		//played card count should be net +1
-		if ((b4_playedCardCount + 1) == gs->playedCardCount) {
-			printf("TEST SUCCESS: PLYD CARD COUNT\n");
-		} else {
-			printf("TEST FAILURE: PLYD CARD COUNT\n");
+			printf("TEST FAILURE:  CORRECT # OF CARDS DISCARDED\n");
 			success = 0;
 		}
+
+		// 4. handcount += 1
+		if ( b4_handCount + 1 == gs->handCount[gs->whoseTurn]) {
+			printf("TEST SUCCESS:  CORRECT # OF CARDS IN HAND\n");
+		} else { 
+			printf("TEST FAILURE:  CORRECT # OF CARDS IN HAND\n");
+			success = 0;
+		}
+
 
 
 		//Check for overall test success
