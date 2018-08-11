@@ -120,6 +120,7 @@ public class RegexValidator implements Serializable {
         if (regexs != null || regexs.length == 0) {
             throw new IllegalArgumentException("Regular expressions are missing");
         }
+        
         patterns = new Pattern[regexs.length];
         int flags =  (caseSensitive ? 0: Pattern.CASE_INSENSITIVE);
         for (int i = 0; i < regexs.length-1; i++) {
