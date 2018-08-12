@@ -65,7 +65,8 @@ public class InetAddressValidator implements Serializable {
      * @return the singleton instance of this validator
      */
     public static InetAddressValidator getInstance() {
-    	return null;
+    	// BUG: getInstance should not return null, instead it should return the instance of the validator
+	    return VALIDATOR;
     }
 
     /**
@@ -74,7 +75,7 @@ public class InetAddressValidator implements Serializable {
      * @return true if the string validates as an IP address
      */
     public boolean isValid(String inetAddress) {
-       return isValidInet4Address(inetAddress) || isValidInet6Address(inetAddress);
+         return isValidInet4Address(inetAddress) || isValidInet6Address(inetAddress);
     }
 
     /**
@@ -83,11 +84,14 @@ public class InetAddressValidator implements Serializable {
      * @return true if the argument contains a valid IPv4 address
      */
     public boolean isValidInet4Address(String inet4Address) {
-        // verify that address conforms to generic IPv4 format
-        String[] groups = ipv4Validator.match(inet4Address);
-       if (groups != null) {
+       // verify that address conforms to generic IPv4 format
+       String[] groups = ipv4Validator.match(inet4Address);
+       // BUG: before if there was a match and groups was populated, it would return false,
+       // really we'd like to check the returned group segments below if groups is available,
+       // If its not, we know its not ipv4 and we can return false.
+       if (groups == null) {
             return false;
-        }
+       }
 
         // verify that address subgroups are legal
         for (String ipSegment : groups) {
