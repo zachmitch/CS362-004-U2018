@@ -5,6 +5,7 @@ import java.util.Random;
 import org.junit.Test;
 import incorrect.UrlValidator;
 
+
 //import static org.junit.Assert.*;
 
 
@@ -34,7 +35,6 @@ public class UrlValidatorTest extends TestCase {
 	   System.out.println(v2.isValid("file://picture.jpg"));
 	   System.out.println(v2.isValid("http://yes/this/works")); 
 	   System.out.println(v2.isValid("http://www.google.com/main/subdir")); 
-
    }
    
    
