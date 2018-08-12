@@ -23,8 +23,11 @@ public class UrlValidatorTest extends TestCase {
 	   UrlValidator v = new UrlValidator();
 	   
 	   System.out.println(v.isValid("http://google.com"));
-	   
 	   System.out.println(v.isValid("https://google.com"));
+	   System.out.println(v.isValid("http://google.com?arg1=foo&arg2@bar"));
+	   
+	   UrlValidator v2 = new UrlValidator(UrlValidator.ALLOW_ALL_SCHEMES);
+	   System.out.println(v2.isValid("file://picture.jpg"));
    }
    
    
