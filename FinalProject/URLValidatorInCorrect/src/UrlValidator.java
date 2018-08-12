@@ -165,6 +165,9 @@ public class UrlValidator implements Serializable {
     private static final int PARSE_AUTHORITY_EXTRA = 4;
 
     private static final String PATH_REGEX = "^(/[-\\w:@&?=+,.!*'%$_;\\(\\)]*)?$";
+					// BUG #1       ^ ~ /   ^,  
+		    // add tilde and fslash ------->    ^  here ^
+
     private static final Pattern PATH_PATTERN = Pattern.compile(PATH_REGEX);
 
     private static final String QUERY_REGEX = "^(\\S*)$";
@@ -190,8 +193,6 @@ public class UrlValidator implements Serializable {
      * If no schemes are provided, default to this set.
      */
    private static final String[] DEFAULT_SCHEMES = {"http", "https", "ftp"}; // Must be lower-case
-
-
 
     /**
      * Singleton instance of this class with default schemes and options.
@@ -234,7 +235,6 @@ public class UrlValidator implements Serializable {
     public UrlValidator(long options) {
         this(null, null, options);
     }
-
     /**
      * Behavior of validation is modified by passing in options:
      * @param schemes The set of valid schemes. Ignored if the ALLOW_ALL_SCHEMES option is set.
@@ -245,7 +245,6 @@ public class UrlValidator implements Serializable {
     public UrlValidator(String[] schemes, long options) {
         this(schemes, null, options);
     }
-
     /**
      * Initialize a UrlValidator with the given validation options.
      * @param authorityValidator Regular expression validator used to validate the authority part
@@ -258,7 +257,6 @@ public class UrlValidator implements Serializable {
     public UrlValidator(RegexValidator authorityValidator, long options) {
         this(null, authorityValidator, options);
     }
-
     /**
      * Customizable constructor. Validation behavior is modifed by passing in options.
      * @param schemes the set of valid schemes. Ignored if the ALLOW_ALL_SCHEMES option is set.
@@ -280,13 +278,12 @@ public class UrlValidator implements Serializable {
             allowedSchemes = new HashSet<String>(schemes.length);
             for(int i=0; i < schemes.length; i++) {
                 allowedSchemes.add(schemes[i].toUpperCase(Locale.ENGLISH));
-
+		//BUG #2 --->                   ^ toLowerCase  
             }
         }
 
         this.authorityValidator = authorityValidator;
     }
-
     /**
      * <p>Checks if a field has a valid url address.</p>
      *
@@ -313,10 +310,12 @@ public class UrlValidator implements Serializable {
             return false;
         }
 
+
+
         String authority = urlMatcher.group(PARSE_URL_AUTHORITY);
 
-        // BUG: before it was checking http, but as noted in the comments, it should check against file
-        if ("file".equals(scheme)) {// Special case - file: allows an empty authority
+        // BUG # 3: change from 'http' to 'file' 
+        if ("http".equals(scheme)) {// Special case - file: allows an empty authority
             if (authority != null) {
                 if (authority.contains(":")) { // but cannot allow trailing :
                     return false;
