@@ -68,6 +68,7 @@ public class UrlValidatorTest extends TestCase {
 	System.out.println(authority.isValid("http://www.amazon.com"));
 	System.out.println(authority.isValid("http://www.reddit.com"));
 	System.out.println(authority.isValid("http://www.ebay.com"));
+	System.out.println(authority.isValid("http://www.this#$au thority should fale.com"));
  
 	// tld
 	UrlValidator tld = new UrlValidator();
@@ -85,6 +86,8 @@ public class UrlValidatorTest extends TestCase {
 	System.out.println(prot.isValid("HTTPS://www.google.com"));
 	System.out.println(prot.isValid("ftp://www.google.com"));
 	System.out.println(prot.isValid("FTP://www.google.com"));
+	System.out.println(prot.isValid("Faled://www.google.com"));
+	   
 
 	//Port Number
 	UrlValidator portNum = new UrlValidator();
@@ -114,7 +117,7 @@ public class UrlValidatorTest extends TestCase {
 	UrlValidator urlVal2 = new UrlValidator(UrlValidator.ALLOW_ALL_SCHEMES);
 		
 	String[] protocols = {"http://", "HTTP://", "https://", "HTTPS://", "telnet://", "ssl://", "ssh://", "ssn://", "ftp://"};
-	String[] domains = { "google", "apple", "reddit"};
+	String[] domains = { "google", "apple", "reddit","epic fale"};
 	String[] tlds = {".com",".net",".super", ".html", ".44", ".-()*^*&", ".^^", ".io", ".co"};
 	String[] paths = {"/somepath", "/main/subdir", "/~main", "", "/apple.php", "/septermber/octerber/novermber", "\\/","/99"  };
 	String[] ports = {":80",":443",":-8",":186587384", "", "", ""};
@@ -126,7 +129,7 @@ public class UrlValidatorTest extends TestCase {
 		
 			rand1 = rand(1); //Random on flags	
 			rand2 = rand(8); //protocols	
-			rand3 = rand(2); // domains	
+			rand3 = rand(3); // domains	
 			rand4 = rand(8); //tlds	
 			rand5 = rand(7); // paths	
 			rand6 = rand(6); // ports	
@@ -148,9 +151,6 @@ public class UrlValidatorTest extends TestCase {
 		}
 		
 		
-
-
-
    }
    
 
